@@ -1,23 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Avatar from '@material-ui/core/Avatar';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src="./profile-pic.jpg" className="App-logo" alt="profile-pic" />
+        <Router>
+        <Link to="about">About</Link>
+        <Link to="personal-projects">Personal Projects</Link>
+          <Route path="/about" component={About}></Route>
+          <Route path="/personal-projects" component={Projects}></Route>
+        </Router>
       </header>
     </div>
   );
