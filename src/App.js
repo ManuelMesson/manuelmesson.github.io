@@ -13,12 +13,13 @@ function App() {
       <header>
         <img src="./profile-pic.jpg" className="App-logo circle" alt="profile-pic" />
       </header>
+      Manuel is a Latino, fully bilingual Software Developer based in Seattle, WA. 
       <Router>
           <Row className="d-flex align-items-center">
-          <Col xs={3}><h1><Link to="/personal-projects">Work Experience</Link></h1></Col> 
-            <Col xs={3}><h1><Link to="/personal-projects">Personal Projects</Link></h1></Col> 
-            <Col xs={3}><h1><Link to="/about">Resume</Link></h1></Col> 
-            <Col xs={3}><h1><Link to="/about">About</Link></h1></Col> 
+          <Col xs={3}><h3><Link to="/personal-projects">Work Experience</Link></h3></Col> 
+            <Col xs={3}><h3><Link to="/personal-projects">Personal Projects</Link></h3></Col> 
+            <Col xs={3}><h3><Link to="/about">Resume</Link></h3></Col> 
+            <Col xs={3}><h3><Link to="/about">About</Link></h3></Col> 
           </Row> 
         <Main />
       </Router>
