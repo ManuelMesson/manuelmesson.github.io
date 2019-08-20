@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Main from "./containers/Main";
+
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Pitch from "./components/Pitch";
+
+import Menu from "./components/Menu";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Container>
+      <header>
+        <img
+          src="./profile-pic.jpg"
+          className="App-logo circle"
+          alt="profile-pic"
+        />
       </header>
-    </div>
+      <Pitch />
+      <Router>
+        <Menu />
+        <Main />
+      </Router>
+    </Container>
   );
 }
 
