@@ -8,11 +8,11 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Pitch from "./components/Pitch";
 
-import Menu from './components/Menu';
+import Menu from "./components/Menu";
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <header>
         <img
           src="./profile-pic.jpg"
@@ -22,12 +22,10 @@ function App() {
       </header>
       <Pitch />
       <Router>
-        <Row className="d-flex align-items-center">
-<Menu/>
-        </Row>{" "}
+        <Menu />
         <Main />
-      </Router>{" "}
-    </div>
+      </Router>
+    </Container>
   );
 }
 
