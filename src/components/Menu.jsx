@@ -9,8 +9,8 @@ class Menu extends Component {
   displayLinks = () => {
     return ROUTES.map(route => {
       return (
-        <Col xs={3}>
-          <Link className="menu-link" key={route.id} to={route.path}>
+        <Col xs={6} md={3}  key={route.id}>
+          <Link className="menu-link" to={route.path}>
             {route.linkTitle}
           </Link>
         </Col>
@@ -18,7 +18,7 @@ class Menu extends Component {
     });
   };
   render = () => {
-    return <Row>{this.displayLinks()}</Row>;
+    return <Row className="menu">{this.displayLinks()}</Row>;
   };
 }
 

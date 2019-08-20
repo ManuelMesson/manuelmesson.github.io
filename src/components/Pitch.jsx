@@ -5,8 +5,8 @@ class Pitch extends Component {
     return (
       <div>
         <p>
-          Manuel is a Latino, Software Developer based in Seattle, WA. He
-          specialize in Front End/Web Development technologies.{" "}
+          Manuel is a Latino, Software Developer based in Seattle, WA.<br /> 
+          He specialize in Front End/Web Development technologies.{" "}
         </p>
       </div>
     );
