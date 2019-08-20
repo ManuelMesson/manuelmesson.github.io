@@ -18,7 +18,7 @@ class Menu extends Component {
     });
   };
   render = () => {
-    return <Row>{this.displayLinks()}</Row>;
+    return <Row className="menu">{this.displayLinks()}</Row>;
   };
 }
 
