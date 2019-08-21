@@ -12,8 +12,8 @@ class Footer extends Component {
           <Row>
             <Col xs={12}>
               <p className="footer-text">
-                Made in
-                <a href="https://en.wikipedia.org/wiki/Seattle">Seattle</a> with
+                Made in&nbsp;
+                <a href="https://en.wikipedia.org/wiki/Seattle">Seattle</a> with&nbsp;
                 <span className="heart">&hearts;</span>
               </p>
             </Col>
