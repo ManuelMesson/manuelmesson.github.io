@@ -4,8 +4,8 @@ class Pitch extends Component {
   render = () => {
     return (
       <div>
-        <p>
-          Manuel is a Latino, Software Developer based in Seattle, WA.<br /> 
+        <p className="lead">
+          Manuel is a Latino, Fully Bilingual, Software Engineer based in Seattle, WA.<br /> 
           He specialize in Front End/Web Development technologies.{" "}
         </p>
       </div>
